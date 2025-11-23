@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "shadcn-ui": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@jpisnice/shadcn-ui-mcp-server"
+      ],
+      "env": {
+        "FRAMEWORKS": "react"
+      },
+      "description": "Shadcn/UI MCP server for component management and documentation"
+    },
+    "playwright": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "description": "Playwright MCP server for browser automation and E2E testing"
+    }
+  }
+}
