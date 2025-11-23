@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(npx create-next-app:*)",
+      "WebSearch",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run build:*)",
+      "Bash(dir:*)",
+      "Bash(npx playwright install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout /t 5 /nobreak)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_resize",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd comprehensive project documentation\n\nComplete documentation covering architecture, testing, and handoff.\n\nDocumentation Files:\n- README.md: Technical architecture, setup instructions, and project overview\n- CLAUDE.md: Project guide with implementation status, coding standards, and quick reference\n- handoff.xml: Complete project handoff with all tasks, history, and deployment checklists\n- sysprompt.md: Original system prompt with project architecture\n- SESSION_SUMMARY.md: Development session documentation\n- FEATURE_TEST_INSIGHTS.md: 15,000+ word testing report with feature analysis and UX insights\n- E2E_TESTING_SUMMARY.md: End-to-end test suite documentation\n- RESPONSIVE_TESTING_SUMMARY.md: Responsive design test coverage\n\nKey Documentation Highlights:\n- Project status: 98% complete (50 of 51 tasks done)\n- Complete testing validation (85+ automated tests)\n- Comprehensive feature analysis with conversion optimization insights\n- Business intelligence assessment and ROI projection\n- Production readiness verification\nEOF\n)\")",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enabledMcpjsonServers": [
+    "shadcn-ui",
+    "playwright"
+  ]
+}
