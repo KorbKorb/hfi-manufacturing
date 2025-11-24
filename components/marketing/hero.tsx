@@ -4,9 +4,9 @@ import { TrustBadge } from "./trust-badge"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-slate-900 text-white">
-      {/* Video Background Placeholder */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 opacity-90" />
+    <section className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-slate-950 text-white">
+      {/* Radial gradient centers light at top to highlight navbar */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-950" />
 
       {/* Content */}
       <div className="relative container mx-auto px-4 py-24 md:py-32 lg:py-40">
