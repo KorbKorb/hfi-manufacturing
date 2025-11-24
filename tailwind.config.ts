@@ -51,6 +51,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        orbitron: ['var(--font-orbitron)', 'sans-serif'],
+        mono: ['var(--font-jetbrains)', 'monospace'],
       },
     },
   },

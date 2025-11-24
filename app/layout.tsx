@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Orbitron, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/marketing/header"
 import { Footer } from "@/components/marketing/footer"
@@ -7,6 +7,16 @@ import { Footer } from "@/components/marketing/footer"
 const inter = Inter({
   subsets: ["latin"],
   variable: '--font-inter',
+})
+
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: '--font-orbitron',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: '--font-jetbrains',
 })
 
 export const metadata: Metadata = {
@@ -21,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${orbitron.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

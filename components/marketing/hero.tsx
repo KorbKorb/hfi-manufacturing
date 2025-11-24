@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { TrustBadge } from "./trust-badge"
+import { LiveShopStatus } from "./live-shop-status"
 
 export function Hero() {
   return (
@@ -11,7 +12,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative container mx-auto px-4 py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 font-orbitron">
             Precision Stainless Steel Fabrication for Mission-Critical Supply Chains
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl">
@@ -19,7 +20,7 @@ export function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <Button
               asChild
               size="lg"
@@ -35,6 +36,11 @@ export function Hero() {
             >
               <Link href="/capabilities">View Capabilities</Link>
             </Button>
+          </div>
+
+          {/* Live Shop Status - Creates Urgency */}
+          <div className="mb-8">
+            <LiveShopStatus />
           </div>
 
           {/* Trust Badges */}

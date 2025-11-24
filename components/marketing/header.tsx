@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-900/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-slate-800 via-slate-950 to-slate-950 backdrop-blur-md">
       {/* Utility Bar - ISO Badge */}
       <div className="border-b border-slate-800/60 bg-slate-800/30">
         <div className="container mx-auto px-4 py-2">
@@ -25,7 +25,7 @@ export function Header() {
 
       {/* Main Navigation */}
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -70,7 +70,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Button
               asChild
-              className="bg-orange-600 hover:bg-orange-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-orange-600/90 backdrop-blur-sm hover:bg-orange-500 text-white font-semibold border-t border-white/20 shadow-[0_0_15px_rgba(234,88,12,0.5)] hover:shadow-[0_0_25px_rgba(234,88,12,0.7)] transition-all duration-300"
             >
               <Link href="/quote">Request a Quote</Link>
             </Button>

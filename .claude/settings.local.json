@@ -21,7 +21,13 @@
       "mcp__playwright__browser_resize",
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nAdd comprehensive project documentation\n\nComplete documentation covering architecture, testing, and handoff.\n\nDocumentation Files:\n- README.md: Technical architecture, setup instructions, and project overview\n- CLAUDE.md: Project guide with implementation status, coding standards, and quick reference\n- handoff.xml: Complete project handoff with all tasks, history, and deployment checklists\n- sysprompt.md: Original system prompt with project architecture\n- SESSION_SUMMARY.md: Development session documentation\n- FEATURE_TEST_INSIGHTS.md: 15,000+ word testing report with feature analysis and UX insights\n- E2E_TESTING_SUMMARY.md: End-to-end test suite documentation\n- RESPONSIVE_TESTING_SUMMARY.md: Responsive design test coverage\n\nKey Documentation Highlights:\n- Project status: 98% complete (50 of 51 tasks done)\n- Complete testing validation (85+ automated tests)\n- Comprehensive feature analysis with conversion optimization insights\n- Business intelligence assessment and ROI projection\n- Production readiness verification\nEOF\n)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(npx vercel --version)",
+      "Bash(npx vercel)",
+      "Bash(npx vercel login)",
+      "Bash(npx vercel:*)"
     ],
     "deny": [],
     "ask": []
